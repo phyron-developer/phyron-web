@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Protest+Revolution&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li ,a ,button,input{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    border-bottom: 1px solid black;
+}
+h1{
+    font-size: 37px;
+    text-align: center;
+    color: var(--color);
+    margin-bottom: 30px;
+}
+h2{
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 34px;
+}
+p,button{
+    color: var(--color);
+}
+body{
+    color: var(--color);
+    background-color: black;
+    column-rule: var(--color);
+}
+:root{
+    --span:rgb(253, 177, 0);
+    --color:#fff;
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Playfair Display", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+.header{
+    padding: 5px 0px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header ul li a{
+    color: var(--color);
+    margin-top: 10px;
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+}
+.header ul button{
+    padding: 13px 20px;
+    background-color: rgb(253, 177, 0);
+    margin-left: 30px;
+}
+.slide{
+    background-color: rgba(255, 255, 255, 0.352);
+    width: 100%;
+    height: 500px;
+}
+.swiper-slide img{
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-me{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.018);
+}
+.about-con{
+    width: 90%;
+    margin: 0 auto;
+}
+.about-con span{
+    color: var(--span);
+}
+.about-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-left{
+    width: 48%;
+}
+.about-left p{
+    line-height: 24px;
+}
+#btn-more{
+    margin-top: 20px;
+    padding: 13px 30px;
+    background-color: var(--span);
+}
+.about-right{
+    width: 48%;
+}
+.about-right img{
+    width: 100%;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+.about-right img:hover{
+    transform: scale(1.02) translateY(-5px);
+}
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #000000cc;
+    z-index: 1000;
+}
+#login-form{
+    color: black;
+    background-color: #fff;
+    width: 40%;
+    margin: 10% auto;
+}
+#login-form form{
+    padding: 30px;
+}
+form input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.246);
+    border-radius: 5px;
+}
+form #submit{
+    padding: 10px 20px;
+    background-color: var(--span);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .logo{
+        font-size: 10px;
+    }
+    .header ul, button{
+        font-size: 12px;
+    }
+    .slide{
+        height: 200px;
+    }
+    .slide img{
+        width: 100%;
+        height: 200px;
+    }
+    .about-con h1{
+        font-size: 19px;
+    }
+    .about-box{
+        display: grid;
+    }
+    .about-left{
+        font-size: 15px;
+        width: 100%;
+    }
+    .about-left h2{
+        font-size: 12px;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .btn-more{
+        padding: 5px 20px;
+    }
+    #login-form{
+        width: 90%;
+    }
+}
