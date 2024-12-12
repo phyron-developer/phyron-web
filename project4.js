@@ -58,7 +58,7 @@ var swiper = new Swiper(".mySwiper", {
         }
     
         // Remove the login form if validation is successful
-        body.find('#login-form').remove();
+        body.find('.popup').remove();
     });
 
 })
